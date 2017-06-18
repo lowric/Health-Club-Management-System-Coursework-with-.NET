@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1FDB3E67-0F72-4AD4-B01E-46D7A6A6ACD1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EricDISForms</RootNamespace>
+    <AssemblyName>EricDISForms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EricDISLibrary">
+      <HintPath>..\EricDISLibrary\bin\Debug\EricDISLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LocalManagerMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocalManagerMainMenu.Designer.cs">
+      <DependentUpon>LocalManagerMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocalWeekMonthSaleReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocalWeekMonthSaleReportForm.Designer.cs">
+      <DependentUpon>LocalWeekMonthSaleReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInForm.Designer.cs">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageMembershipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageMembershipForm.Designer.cs">
+      <DependentUpon>ManageMembershipForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NationalManagerMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NationalManagerMainMenu.Designer.cs">
+      <DependentUpon>NationalManagerMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NationalWeekMonthSaleReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NationalWeekMonthSaleReportForm.Designer.cs">
+      <DependentUpon>NationalWeekMonthSaleReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NationalWeekMonthSaleStatisticForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NationalWeekMonthSaleStatisticForm.Designer.cs">
+      <DependentUpon>NationalWeekMonthSaleStatisticForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaleFoodBeverageMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaleFoodBeverageMenu.Designer.cs">
+      <DependentUpon>SaleFoodBeverageMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffMainMenu.Designer.cs">
+      <DependentUpon>StaffMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffStatisticForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffStatisticForm.Designer.cs">
+      <DependentUpon>StaffStatisticForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="LogInForm.resx">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StaffMainMenu.resx">
+      <DependentUpon>StaffMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
